@@ -5,13 +5,21 @@
   <meta name="Description" content="INF 7420 Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
+  <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <nav>
+    <img src="images/Linkedin.jpg" class="headshot">
+    <h1 class="name">Mary Jatkowski</h1>
+    <h2 class="about-me"> Digital Content Specialist</h2>
+    <img src="images/menu-icon.png" class="menu-icon">
+    <nav class="main-navigation">
     <ul>
       <li>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
       </li>
       <li>
         <a href="about.html">About</a>
@@ -20,54 +28,60 @@
         <a href="portfolio.html">Portfolio</a>
       </li>
       <li>
-        <a href="contact.html"> Let's Connect"</a>
+        <a href="contact.html">Contact</a>
       </li>
-    </ul>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <img src="images/kittybylaptop.jpg" width="700" alt="Cat staring at laptop on desk. Laptop has museum website loaded">
-    <h1><strong>Mary J. Designs</strong></h1>
-    <p><i>"Digital creations for accessible learning"</i></p>
+  <main class="main">
+    <img src="images/CharlestonSunset.jpg" class="top-image" width="700" alt="Charleston Sunset">
+    <h1 class="title"> Mary J. Designs for Today's Museums </h1>
 
-    <figure>
-      <img src="images/videoscreenshot.png" alt="About Me Video Shot" width="300"><figcaption>Video Introduction on <a href="about.html">About Page</a></figcaption>
-    </figure>
-    <h2><a href="about.html"><strong>About</strong></a></h2>
-      <p>
-        The creation of Mary J. Designs was just a nascent thought when I partook in the digitization of a 1930s plant collection at the University of Michigan. Because of this digital museum initiative, I realized that the best way to engage the increasing connected world in historical or cultural content is to develop digital platforms that allow people from anywhere to access the collections, sites, and research of any cultural institution and museum. </p>
-      <p>
-        Fast forward three years, I decided to pursue a graduate degree in Library and Information Science to advance my expertise in  website design, information sharing, and digital preservation. Mary J Designs took shape as my coursework and museum work began to overlap and I realized that digitization and online interfacing is vital to the reach and impact of museums anywhere in the US.
-      </p>
+    <figure class="rowimg1">
+        <img class="image-align-left" src="images/MaryatWork.jpg" alt="Mary at Work" width="300">
+      </figure>
 
-    <h2><a href="portfolio.html"><strong>Portfolio</strong></a></h2>
-    <figure>
-      <img src="images/digitalartmccoy.jpg" alt="Digital illustration of boy reading by the railroad tracks to be used for Museum Storybook" width="300"><figcaption>Digital Illustration by Mary Jatkowski</figcaption>
-    </figure>
+    <div class="row1of3">
+    <h2 class="header1"><a href="about.html"><strong>About Mary J's Designs</strong></a>
+    </h2>
       <p>
+          Once I noticed museums unable to meet the needs and interests of its remote users and new generations, I realized the need for digital content specialists to assist museums in furthering their mission to share their collection in the 21st century world. Fast forward three years, I pursued a graduate degree in Library and Information Science to advance my expertise in  website design, information sharing, and digital preservation. From preservation work at museums such as The Historic Charleston Foundation to a graduate specialization in digital content management,I hope to continue to provide organizaitons with the support they need to increase their impact and reach for today and for future generations. </p>
+        </div>
+
+
+     <figure class="rowimg2">
+            <img src="images/digitalartmccoy.jpg" alt="Digital illustration of boy reading by the railroad tracks to be used for Museum Storybook" width="300"><figcaption>Digital Illustration by Mary Jatkowski</figcaption>
+      </figure>
+
+    <div class="row2of3">
+      <h2 class="header2"><a href="portfolio.html">Portfolio</a></h2>
+          <p>
         With formal training in information science and several years of experience working for museums and nonprofits, I have developed skills in the following digital communications and platforms:
-      </p>
         <ul>
           <li> Mobile App Content Development</li>
           <li> Online Marketing and Verbal Design</li>
           <li> Website Design for Programs, Events, and Portfolios</li>
           <li> Digial Art and Content for Exhibitions, Programming, and Events</li>
         </ul>
+        </p>
       <p>
         <a href="portfolio.html">For a complete preview of my porfolio...</a>
       </p>
+      </div>
 
-    <h2><strong>Blog Posts</strong></h2>
-      <ul>
+    <div class="row3of3">
+      <h2 class="header3">Blog Posts</h2>
+      <ul class="bloglist">
         <li>
           <a href= "https://maryjdigitalideas.blogspot.com/2018/09/virtual-field-trips-impact-everyday.html">Virtual Field Trips Impact Everyday Classroom Learning</a> </li>
         <li>
           <a href="https://maryjdigitalideas.blogspot.com/2018/09/htmlccs-and-helpful-tutorials.html">HTML, CCS, and Helpful Tutorials</a></li>
       </ul>
+      </div>
   </main>
 
-    <footer>
+    <footer class="footer">
       <ul>
           <li><a href= "https://www.facebook.com/maryjdoodles/">facebook</a></li>
           <li><a href= "https://www.linkedin.com/in/mary-snyder-jatkowski">linkedin</a></li>
