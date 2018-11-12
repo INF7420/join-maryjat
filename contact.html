@@ -43,9 +43,39 @@
           <p>Email:<br><a href="mailto:maryjatkow@gmail.com">maryjatkow@gmail.com</a></p>
         </address>
 
-  </main>
+      <form action="https://formspree.io/gr0347@wayne.edu" method="POST" data-validate>
+         <div>
+           <label for="name">Name
+              <input type="text" name="name" class="form-input" required>
+           </label>
+         </div>
 
-    <footer class="footer">
+         <div>
+           <label for="email">Email
+              <input type="email" name="_replyto" class="form-input" required>
+           </label>
+         </div>
+
+         <div>
+           <label for="message">Message
+             <textarea id="message" name="message" class="form-input" required></textarea>
+           </label>
+         </div>
+         <Button>
+            <input type="submit" value="Send">
+         </Button>
+
+         <input type="hidden" name="_next" value="https://site.io/thanks.html" />
+        </form>
+  </main>
+    <script
+      src="https://cdn.jsdelivr.net/gh/cferdinandi/validate@2.2.0/dist/validate.min.js">
+    </script>
+    <script>
+      validate.init();
+    </script>
+
+  <footer class="footer">
     <ul>
         <li><a href= "https://www.facebook.com/maryjdoodles/">facebook</a></li>
         <li><a href= "https://www.linkedin.com/in/mary-snyder-jatkowski">linkedin</a></li>
