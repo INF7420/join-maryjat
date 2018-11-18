@@ -24,6 +24,11 @@
     z-index: 11;
     }
 
+    .social-media {
+      display: inline-flex;
+      border-bottom: black;
+    }
+
   .main-navigation ul {
     list-style: none;
     text-align: center;
@@ -38,19 +43,10 @@
     line-height: 40px;
     margin: 10px;
     height: 40px;
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid gray;
     font-family: sans-serif;
   }
 
-  .social-media ul li{
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    border-bottom: black;
-    margin: 0;
-    padding: 0;
-  }
 
   .main-navigation a {
     text-decoration: none;
@@ -121,8 +117,8 @@
   top: -10px;
   right:0px;
   left:-30px;
-  height: 300px;
-  width: 150%;
+  height: auto;
+  width: 110%;
   overflow:hidden;
   margin: 0;
   border: 20px solid #151718;
@@ -135,7 +131,12 @@
   font-size: 30px;
   text-decoration: bold;
   text-align: center;
-  margin: 2em auto;
+}
+
+.title1 {
+  position: relative;
+  margin-left: 30%;
+  text-align: center;
 }
 
 .header3 {
@@ -154,18 +155,22 @@
   margin-top: 50px;
 }
 
-.row1of3 {
-  width: auto;
-  padding-left: 5px;
-  vertical-align: middle;
-  margin-left: 125px;
-}
 
 .rowimg1 {
-  float: right;
-  width: 10%;
-  padding: 0px;
-  margin-right: 25%;
+  float: left;
+  padding-right: 20px;
+  border: 10px;
+  margin: 5px;
+  margin-left: 120px;
+}
+
+.row1of3 {
+  width: auto;
+  border: 0;
+  padding-left:10px;
+  margin-left: 400px;
+  padding-bottom: 0px;
+
 }
 
 .rowimg2 {
@@ -174,7 +179,7 @@
   padding-right: 20px;
   border: 10px;
   margin: 5px;
-  margin-left: 125px;
+  margin-left: 120px;
 }
 
 .row2of3 {
@@ -184,10 +189,6 @@
   padding-left:15px;
   margin-left: 400px;
 }
-
-
-
-
 
 .row3of3 {
   float: bottom;
@@ -217,8 +218,8 @@
 
 .portfolio {
   position: relative;
-  left: 200px;
-  width: 80%;
+  left: 140px;
+  width: 60vw;
 }
 .resume {
   background-color: black;
@@ -228,21 +229,23 @@
 
 }
 
+
 .slideshow {
-  width: 800px;
-  height: 430px;
+  width: 70vw;
+  height: 500px;
+  margin-left: 10px;
   overflow:hidden;
   position:relative;
-  margin: center;
+  justify-content: center;
   }
 
 .slideshow img{
   position:absolute;
   animation:slideshow 40s infinite;
   opacity: 0;
-  width: 95%;
-  height: auto;
-}
+  width: 85%;
+  height: auto;}
+
 @keyframes slideshow {
   25%{opacity:1;} 40%{opacity:0;}
 }
@@ -337,12 +340,14 @@ textarea {
   Display: none;
   Position: absolute;
   Padding: 5px;
-  border: 5px solid #444;
+  border: 3px solid #444;
   background-color: black;
-  top: 10px;
+  top: 15px;
+  left: 15px;
   width: 50%;
+  height: 50vh;
   font-size: 12px;
-  border-radius: 4px 0 4px 4px;
+  border-radius: 2px 0 2px 2px;
   }
 
   nav li {
@@ -360,31 +365,39 @@ textarea {
     top: 0px;
     bottom: 0px;
     width: 50%;
-    height: 20vh;
     z-index: 11;
     }
 
   .main-navigation ul {
     list-style: none;
     text-align: center;
-    padding: 10px;
+    padding:10px;
     margin-top: 10px;
+    height: 50vh;
+
   }
 
   .main-navigation ul li {
+    position: relative;
     font-size: 1.2em;
-    line-height: 40px;
-    margin: 10px;
-    height: 40px;
-    border-bottom: 2px solid lightgray;
+    line-height: 15px;
+    margin: 5px;
+    border-bottom: 2px solid grey;
     font-family: sans-serif;
   }
 
   .main-navigation a {
     text-decoration: none;
-    color: grey;
+    color: lightgrey bold;
     display: block;
-    transition: .3s background-color;
+    transition: .3s background-color
+  }
+
+  .social-media {
+    display: inline-flex;
+    text-decoration: none;
+    border: 0px;
+    justify-content: center;
   }
 
   .main-navigation a:hover {
@@ -396,24 +409,36 @@ textarea {
     cursor: default;
   }
 
+  .title1 {
+    left: -55px;
+    font-size: 28px;
+    width: 65vw;
+    text-align: center;
+  }
   .rowimg1 {
     position: relative;
-    left: -200px;
+    width: 10vw;
+    left: -95px;
   }
+
   .row1of3 {
     width: 80%;
     position: relative;
-    left: -100px;
+    left: -390px;
+    margin-top: 300px;
   }
 
   .rowimg2 {
     position: relative;
     left: -100px;
+    border-bottom: 10px;
+    text-align: center;
+    font-size: 10px;
     }
 
     .row2of3 {
       position: relative;
-      margin-top: 350px;
+      margin-top: 370px;
       width:80%;
       left: -390px;
     }
@@ -438,9 +463,8 @@ textarea {
     .portfolio {
       display: relative;
       left: 20px;
-      width: 80vw;
+      width: 70vw;
     }
     .slideshow {
       display: relative;
-      width: 80vw;
-    }
+      width: 80vw;}
