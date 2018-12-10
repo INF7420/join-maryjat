@@ -7,39 +7,45 @@
   <title>Document</title>
   <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="alt-style2.css">
 </head>
+
 <body>
-    <header>
-        <nav class="main-navigation">
+    <div class="page">
+      <div class="sidebar">
+        <div class="panel">
+            <nav class="main-navigation">
            <img src="images/menu-icon.png" class="menu-icon">
-       <ul>
-           <h1 class="name"> Mary Jatkowski, MLIS</h1>
-         <li>
-           <a href="index.html">Home</a>
-         </li>
-         <li>
-           <a href="about.html">About</a>
-         </li>
-         <li>
-           <a href="portfolio.html">Portfolio</a>
-         </li>
-          <li>
+           <h1>Mary Jatkowski, MLIS</h1>
+           <ul>
+            <li>
+            <a href="index.html">Home</a>
+            </li>
+            <li>
+            <a href="about.html">About</a>
+            </li>
+            <li>
+            <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
              <a href="contact.html"class="active">Contact</a>
-         </li>
-         <li class="social-media">
-           <a href="https://www.facebook.com/maryjdoodles/" alt="facebook"><img src="images/facebook.png" alt="facebook" width="25px"></a>
-          <a href= "https://www.linkedin.com/in/mary-snyder-jatkowski"><img src="images/linkedin.png"width="25px" alt="linkedin"></a>
-          <a href= "https://www.instagram.com/maryjdoodles/" alt="instagram"><img src="images/instagram.png" width="25px" alt="instagram"></a>
+            </li>
+            <li class="social-media">
+            <a href="https://www.facebook.com/maryjdoodles/" alt="facebook"><img src="images/facebook.png" alt="facebook" width="25px"></a>
+            <a href= "https://www.linkedin.com/in/mary-snyder-jatkowski"><img src="images/linkedin.png"width="25px" alt="linkedin"></a>
+            <a href= "https://www.instagram.com/maryjdoodles/" alt="instagram"><img src="images/instagram.png" width="25px" alt="instagram"></a>
           </li>
          </ul>
        </nav>
-     </header>
+      </div>
 
+  </div>
 
-  <main class="main">
-      <img src="images/charlestonsunset.jpg" class="top-image" width="700" length="1000" alt="Charleston-sunrise"/>
-      <h1 class="title">Let's Connect...</h1>
+  <main class="content">
+    <div class="panel">
+      <div class="panel-body">
+        <img src="images/charlestonsunset.jpg" class="top-image" width="700" length="1000" alt="Charleston-sunrise"/>
+        <h1 class="title1">Let's Connect...</h1>
 
          <address class="address">
           <p>Address:<br>Ladson, SC 29456</p>
@@ -47,7 +53,7 @@
           <p>Email:<br><a href="mailto:maryjatkow@gmail.com">maryjatkow@gmail.com</a></p>
         </address>
 
-      <form action="https://formspree.io/gr0347@wayne.edu" method="POST" data-validate>
+      <form class="form" action="https://formspree.io/gr0347@wayne.edu" method="POST" data-validate>
          <div>
            <label for="name">Name
               <input type="text" name="name" class="form-input" required>
@@ -65,13 +71,17 @@
              <textarea id="message" name="message" class="form-input" required></textarea>
            </label>
          </div>
+
          <button>
             <input type="submit" value="Send">
          </button>
 
-         <input type="hidden" name="_next" value="https://site.io/thanks.html" />
+         <input type="hidden" name="_next" value="https://inf7420.github.io/jatkowski-project/thanks.html" />
         </form>
-  </main>
+        </div>
+      </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/gh/cferdinandi/validate@2.2.0/dist/validate.min.js">
     </script>
@@ -79,8 +89,9 @@
       validate.init();
     </script>
 
-  <footer class="footer">
-      <p> Copyright © 2018 Mary Jatkowski</p>
+    <footer class="footer">
+      <p>Copyright &copy; 2018 Mary Jatkowski</p>
     </footer>
+</div>
 </body>
 </html>

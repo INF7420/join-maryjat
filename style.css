@@ -46,8 +46,12 @@
     border-bottom: 2px solid gray;
     font-family: sans-serif;
   }
-
-
+  .main-navigation h1 {
+    font-size: 18px;
+    line-height: 40px;
+    margin: 10px;
+    font-family: sans-serif;
+  }
   .main-navigation a {
     text-decoration: none;
     color: grey;
@@ -155,7 +159,6 @@
   margin-top: 50px;
 }
 
-
 .rowimg1 {
   float: left;
   padding-right: 20px;
@@ -209,16 +212,16 @@
   margin-bottom: 20px;
   width: 80%;
   height: 400px;
-  margin-left: 150px;
+  margin-left: 250px;
 }
 
 .video-text {
-  margin-left: 150px;
+  margin-left: 250px;
   width: 80%;}
 
 .portfolio {
   position: relative;
-  left: 140px;
+  left: 500px;
   width: 60vw;
 }
 .resume {
@@ -229,11 +232,10 @@
 
 }
 
-
 .slideshow {
   width: 70vw;
   height: 500px;
-  margin-left: 10px;
+  margin-left: 250px;
   overflow:hidden;
   position:relative;
   justify-content: center;
@@ -323,40 +325,9 @@ textarea {
 /*MEDIA Query*/
 @media only screen and (max-width: 720px) {
   .menu-icon {
-  visibility: visible;
-  display: block;
-  position: absolute;
-  }
-
-  .top-image {
-    position: relative;
+    visibility: visible;
     display: block;
-    width: 150%;
-    left: -100px;
-    overflow-x: hidden;
-  }
-
-  nav ul, nav:active ul{
-  Display: none;
-  Position: absolute;
-  Padding: 5px;
-  border: 3px solid #444;
-  background-color: black;
-  top: 15px;
-  left: 15px;
-  width: 50%;
-  height: 50vh;
-  font-size: 12px;
-  border-radius: 2px 0 2px 2px;
-  }
-
-  nav li {
-  text-align: center;
-  width: 100%;
-    }
-
-  nav:hover ul {
-  Display: block;
+    position: absolute;
   }
 
   .main-navigation {
@@ -364,14 +335,45 @@ textarea {
     left: 0px;
     top: 0px;
     bottom: 0px;
-    width: 50%;
+    width: 100%;
     z-index: 11;
-    }
+  }
+
+  h1 {
+    margin: 0 auto;
+    padding: 1em;
+    background: #151718;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  nav ul {
+    Display: none;
+    Position: absolute;
+    Padding: 5px;
+    border: 3px solid #444;
+    background-color: black;
+    top: 15px;
+    left: 15px;
+    width: 50%;
+    height: 30vh;
+    font-size: 12px;
+    border-radius: 2px 0 2px 2px;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+  }
+
+  nav:hover ul {
+    Display: block;
+  }
 
   .main-navigation ul {
     list-style: none;
     text-align: center;
-    padding:10px;
+    padding: 10px;
     margin-top: 10px;
     height: 50vh;
 
@@ -379,7 +381,7 @@ textarea {
 
   .main-navigation ul li {
     position: relative;
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 15px;
     margin: 5px;
     border-bottom: 2px solid grey;
@@ -388,9 +390,10 @@ textarea {
 
   .main-navigation a {
     text-decoration: none;
-    color: lightgrey bold;
+    color: lightgrey;
     display: block;
-    transition: .3s background-color
+    transition: .3s background-color;
+    padding: 1em;
   }
 
   .social-media {
@@ -401,15 +404,52 @@ textarea {
   }
 
   .main-navigation a:hover {
-    background-color: rgb(44, 45, 56);}
+    background-color: rgb(44, 45, 56);
+  }
 
   .main-navigation a.active {
     background-color: black;
     color: white;
+    border-bottom: 2px solid grey;
     cursor: default;
   }
+}
 
-  .title1 {
+.footer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  background: darkcyan;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 1em;
+}
+
+.content {
+  background: rgb(37, 38, 48);
+}
+
+  .top-image {
+    position: relative;
+    display: block;
+    width: 150%;
+    left: -100px;
+    overflow-x: hidden;
+  }
+
+  .social-media {
+    display: inline-flex;
+    text-decoration: none;
+    border: 0px;
+    justify-content: center;
+  }
+
+   .title1 {
     left: -55px;
     font-size: 28px;
     width: 65vw;
